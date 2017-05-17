@@ -281,3 +281,89 @@ textarea {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
+
+
+/* 
+set width and height on the parent element 
+- for this example parent element = .content
+*/
+.content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* layout_slider */
+.layout_slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* slideFrame */
+.slideFrame {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 400%;
+}
+.slideFrame .slide {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.slideFrame .slide h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 50px 0 0 50px;
+}
+.slideFrame #slide1 {
+  background: #329bb3;
+}
+.slideFrame #slide2 {
+  background: #3275b3;
+}
+.slideFrame #slide3 {
+  background: #32b3ab;
+}
+.slideFrame #slide4 {
+  background: #32b38c;
+}
+
+/* indicator */
+nav.indicator {
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  margin-top: -47px;
+}
+nav.indicator .ind {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  text-indent: 1000px;
+  cursor: pointer;
+  background: #fff;
+  -webkit-transition: all, 0.3s, linear;
+  -o-transition: all, 0.3s, linear;
+  transition: all, 0.3s, linear;
+}
+nav.indicator .ind:first-child {
+  margin-top: 0;
+}
+nav.indicator .ind.active {
+  background: #F5AB35;
+}
+nav.indicator .ind:hover {
+  background: #F5AB35;
+}
